@@ -281,14 +281,22 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      Kakao.init("893090a6bfa724b4ff26f9c76eaa0c86");
+      Kakao.init("893090a6bfa724b4ff26f9c76eaa0c86"); // 사용하려는 앱의 JavaScript 키 입력
     </script>
-    <div id="chat-channel-button"></div>
+
+    <a id="chat-channel-button" href="javascript:chatChannel()">
+      <img
+        src="/tool/resource/static/img/button/channel/consult/consult_small_yellow_pc.png"
+        alt="카카오톡 채널 채팅하기 버튼"
+      />
+    </a>
+
     <script>
-      Kakao.Channel.createAddChannelButton({
-        container: "#add-channel-button",
-        channelPublicId: "_VTfpxj",
-      });
+      function chatChannel() {
+        Kakao.Channel.chat({
+          channelPublicId: "_VTfpxj",
+        });
+      }
     </script>
   </body>
 </html>
