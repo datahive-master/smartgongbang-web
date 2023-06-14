@@ -123,7 +123,8 @@
             class="text-sm text-center text-blue-500"
             >패키지 소개</a
           >
-          <div class="text-sm text-center">기술보급 사업</div>
+          <a href="#info" class="text-sm text-center">기술보급 사업</a>
+          <!-- <div class="text-sm text-center">기술보급 사업</div> -->
           <a
             href="http://127.0.0.1:5500/solution.html"
             class="text-sm text-center"
@@ -138,7 +139,10 @@
             class="text-sm text-center text-blue-500"
             >스마트공방 패키지 소개</a
           >
-          <div class="text-sm text-center">스마트공방 기술보급 사업</div>
+          <a href="#info" class="text-sm text-center"
+            >스마트공방 기술보급 사업</a
+          >
+          <!-- <div class="text-sm text-center">스마트공방 기술보급 사업</div> -->
           <a
             href="http://127.0.0.1:5500/solution.html"
             class="text-sm text-center"
@@ -274,29 +278,35 @@
             class="w-full max-w-3xl mx-auto px-5 lg:px-12 flex lg:hidden flex-col gap-12"
           >
             <div class="flex flex-col gap-6">
-              <img src="./resources/img-package-1-m.png" />
-              <img src="./resources/img-package-2-m.png" />
+              <a href="http://127.0.0.1:5500/solution.html"
+                ><img src="./resources/img-package-1-m.png"
+              /></a>
+              <a href="http://127.0.0.1:5500/solution.html"
+                ><img src="./resources/img-package-2-m.png"
+              /></a>
               <img src="./resources/img-package-3-m.png" />
             </div>
           </div>
           <div
             class="w-full max-w-3xl mx-auto px-5 lg:px-12 hidden lg:flex flex-col gap-12"
           >
-            <div class="flex justify-center gap-6">
-              <img
-                src="./resources/img-package-1.png"
-                width="335px"
-                height="439px"
-              />
+            <div class="grid lg:grid-cols-3 gap-6">
+              <a class="block" href="http://127.0.0.1:5500/solution.html"
+                ><img src="./resources/img-package-1.png" class="w-full h-auto"
+              /></a>
+              <a class="block" href="http://127.0.0.1:5500/solution.html"
+                ><img src="./resources/img-package-2.png" class="w-full h-auto"
+              /></a>
+              <!-- 
               <img
                 src="./resources/img-package-2.png"
                 width="335px"
                 height="439px"
-              />
+              /> -->
               <img
+                class="block"
                 src="./resources/img-package-3.png"
-                width="335px"
-                height="439px"
+                class="w-full h-auto"
               />
             </div>
           </div>
@@ -304,6 +314,7 @@
       </section>
       <!-- Package End -->
       <!-- Info Start -->
+      <a id="info"></a>
       <section class="bg-blue-600 text-white">
         <div
           class="w-full max-w-3xl mx-auto px-5 lg:px-12 py-24 flex lg:hidden flex-col gap-12"
